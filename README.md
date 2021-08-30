@@ -33,6 +33,13 @@
     - 접종 후기 : text
     - 작성일 : date
 
+- 기능 : 댓글, 카테고리 분류, 필수 입력, 일일 확진자 수
+- 댓글 : text
+- 카테고리 : datalist
+- 필수 입력 : 필수 입력 창에 value 값이 없다면 return false
+- 일일확진자 수 : 입력 또는 링크
+
+
 ## 2일차 : Create, Read 기능 분석
 1. Create
     - json 방식으로 번호, 작성자, 카테고리, 접종 후기, 작성일을 입력 받아 localStorage에 key, value 값으로 게시글 저장
@@ -44,7 +51,7 @@
 
 ## 3일차 : Delete, Update 기능 분석
 1. Delete
-    - 배열 객체에서 제공 되는 splice 메서드를 활용하면 원하는 위치 요소를 삭제 가능 
+    - 배열 객체에서 제공 되는 splice 메서드를 활용하면 원하는 위치 요소를 삭제 가능
     - contents 배열에 splice 메서드를 활용하여 삭제 요소의 no 값을 요소로 찾아 삭제 기능
 2. Update
     - primary키 no값을 기준으로 수정을 원하는 Create 페이지로 이동
