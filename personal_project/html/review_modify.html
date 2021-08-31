@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<title>백신후기를 알려줘 글작성</title>
+<link rel="stylesheet", href = "../css/modify.css">
+<body>
+
+<h1>📝후기 수정</h1>
+<table>
+      <caption><a href="main_list.html">🏠목록</a></caption>
+
+      <tr>
+            <th>작성자</th>
+            <td><input size = "100%" type="text" id="writer" name="writer" placeholder="필수 입력 사항입니다."/></td>
+      </tr>
+
+      <tr>
+            <th>접종 백신</th>
+            <td>
+                  <input size = "100%" type="text" id = "category" name="category" list ="langname" placeholder="백신 종류를 선택해주세요.">
+                        <datalist id="langname">
+                              <option value="아스트라제네카"> </option>
+                              <option value="얀센"> </option>
+                              <option value="화이자"> </option>
+                              <option value="모더나"> </option>
+                        </datalist>
+            </td>
+      </tr>
+
+      <tr>
+            <th>접종 후기</th>
+                  <td>
+                        <textarea style="width:84%; border:1; overflow:visible; text-overflow:ellipsis;" rows=30 type="text" id="review" name="review" placeholder="필수 입력 사항입니다."></textarea>
+                  </td>
+      </tr>
+</table>
+
+<div id="btn_position">
+      <button class = "btn" onclick="window.history.back()">취소</button>
+      <button class = "btn" onclick="save()">수정</button>
+</div>
+
+</body>
+<script src="../script/review_modify.js"> </script>
+</html>
