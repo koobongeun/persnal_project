@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<title>자유게시판 글작성</title>
+<link rel="stylesheet", href = "../css/view.css">
+<body>
+
+<h1>📖게시글내용</h1>
+<div>
+      <table id = "table_1">
+            <caption><a href="list.html">🏠목록</a></caption>
+
+            <tr>
+                  <th>작성자 :</th>
+                  <td><p id="writer"></p></td>
+            </tr>
+
+            <tr>
+                  <th>접종 백신 :</th>
+                  <td><p id="category"></p></td>
+            </tr>
+
+            <tr>
+                  <th>접종 후기 :</th>
+                  <td><pre id="review"></pre></td>
+            </tr>
+
+            <tr>
+                  <th>작성일 :</th>
+                  <td><p id="write_date"></p></td>
+            </tr>
+      </table>
+
+      <div id = "btn_position">
+            <button class = "btn" onclick="removeContent()">삭제</button>
+            <button class = "btn" onclick="modify()">수정</button>
+      </div>
+</div>
+
+<br><br><br><br>
+
+<div id = "comment">
+      <div id="comments">
+
+            <div id="comment-head" class="comment-row">
+                  <div class="commet-row">
+                        <table id="table_2">
+                              <caption><a>📝댓글</a></caption>
+                              <tbody id="comments-rows">
+                              </tbody>
+                        </table>
+                  </div>
+                  <br>
+                  <span id="comments-count"></span>
+            </div>
+
+            <div class="commet-row">
+                  <textarea rows=5 id="new-comment" name = "new_comment" placeholder="댓글을 입력해주세요"></textarea>
+                  <div>
+                        <button class = "btn2" type="submit" onclick="submitComment()">전송</button>
+                  </div>
+            </div>
+            
+      </div>
+</div>
+
+</body>
+<script src="../script/view.js"> </script>
+</html>
